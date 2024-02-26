@@ -19,6 +19,7 @@
     "@tensorflow/tfjs-node": "^3.18.0",
     "csv-parse": "^5.5.3",
     "fastify": "^4.24.3",
+    "ml-cart": "^2.1.1",
     "ml-regression": "^5.0.0",
     "nodemon": "^3.0.2"
   }

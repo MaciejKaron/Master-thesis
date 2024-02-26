@@ -24,6 +24,7 @@ app.use(koaBody({
 // Routing
 require('./routes/modelRoutes')(router);
 require('./routes/regressionRoutes')(router);
+require('./routes/decisionTreeRoutes')(router);
 
 // Logowanie żądań
 app.use(async (ctx, next) => {

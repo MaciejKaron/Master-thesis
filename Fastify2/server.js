@@ -28,11 +28,13 @@ fastify.register(require('@fastify/multipart'));
     reply.send('hello');
   });
   
+const decisionTreeRoutes = require('./routes/decisionTreeRoutes');
   // Routing
 const modelRoutes = require('./routes/modelRoutes');
 const regressionRoutes = require('./routes/regressionRoutes')
 modelRoutes(fastify);
 regressionRoutes(fastify);
+decisionTreeRoutes(fastify);
   
   // Obsługa błędów
   fastify.setErrorHandler(function (error, request, reply) {
